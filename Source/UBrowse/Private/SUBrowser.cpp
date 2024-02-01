@@ -39,6 +39,7 @@
 #include "SUBrowsePropertyTableRow.h"
 #include "SUBrowserClassItem.h"
 #include "Widgets/SBoxPanel.h"
+#include "EditorStyleSet.h"
 
 #define LOCTEXT_NAMESPACE "SUBrowserMenu"
 
@@ -973,7 +974,7 @@ void FBrowserObject::CustomizeDetails(IDetailLayoutBuilder& Layout)
 			if (SourceAddr != nullptr)
 			{
 				FString CPPValue, UnrealValue;
-				Property->ExportText_Direct(CPPValue, SourceAddr, SourceAddr, nullptr, PPF_ExportCpp);
+				Property->ExportText_Direct(CPPValue, SourceAddr, SourceAddr, nullptr, PPF_None);
 				Property->ExportText_Direct(UnrealValue, SourceAddr, SourceAddr, nullptr, PPF_BlueprintDebugView);
 				FObjectProperty* ObjectProperty = CastField<FObjectProperty>(Property);
 				FStructProperty* StructProperty = CastField<FStructProperty>(Property);

@@ -3,7 +3,7 @@
 #pragma once
 
 
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "ScopedTransaction.h"
 #include "Framework/MultiBox/MultiBoxExtender.h"
 #include "EdGraph/EdGraphPin.h"

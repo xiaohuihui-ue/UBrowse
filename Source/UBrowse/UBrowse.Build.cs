@@ -27,7 +27,7 @@ public class UBrowse : ModuleRules
 			new string[]
 			{
 				"Core",
-				
+                "AssetRegistry",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
